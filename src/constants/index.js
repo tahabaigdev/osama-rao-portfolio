@@ -137,7 +137,7 @@ export const DesignThoughtsData = [
       "As the internet continues to develop and grow exponentially, jobs related to the industry do too, particularly those that relate to web design and development.",
     date: "Apr 8, 2022",
     time: "6min read",
-    link: "",
+    link: "/BlogPosts",
   },
 
   {
@@ -147,7 +147,7 @@ export const DesignThoughtsData = [
       "As the internet continues to develop and grow exponentially, jobs related to the industry do too, particularly those that relate to web design and development.",
     date: "Apr 8, 2022",
     time: "6min read",
-    link: "",
+    link: "/BlogPosts",
   },
 
   {
@@ -157,6 +157,6 @@ export const DesignThoughtsData = [
       "As the internet continues to develop and grow exponentially, jobs related to the industry do too, particularly those that relate to web design and development.",
     date: "Apr 8, 2022",
     time: "6min read",
-    link: "",
+    link: "/BlogPosts",
   },
 ];

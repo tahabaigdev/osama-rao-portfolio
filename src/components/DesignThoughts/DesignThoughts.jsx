@@ -35,7 +35,10 @@ const DesignThoughts = () => {
       <div className="mt-[2rem] flex flex-col">
         {DesignThoughtsData.map((item) => (
           <div key={item.id}>
-            <NavLink className="group relative flex flex-col rounded-[1.6rem] px-[1.6rem] py-[3rem] transition-all duration-[0.3s] hover:bg-[#1C1A19]">
+            <NavLink
+              to={item.link}
+              className="group relative flex flex-col rounded-[1.6rem] px-[1.6rem] py-[3rem] transition-all duration-[0.3s] hover:bg-[#1C1A19]"
+            >
               <div className="max-w-[48rem]">
                 <h4 className="text-[2.6rem] font-semibold leading-[3.12rem]">
                   {item.title}

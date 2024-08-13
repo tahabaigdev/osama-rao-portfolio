@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import Tools from "./Tools";
 import Thoughts from "./Thoughts";
 import Sidebar from "./components/Sidebar/Sidebar";
+import BlogPosts from "./components/BlogPosts/BlogPosts";
 import gsap from "gsap";
 
 const App = () => {
@@ -48,6 +49,8 @@ const App = () => {
               <Route path="/Tools" element={<Tools />} />
 
               <Route path="/Thoughts" element={<Thoughts />} />
+
+              <Route path="/BlogPosts" element={<BlogPosts />} />
             </Routes>
           </div>
         </div>
