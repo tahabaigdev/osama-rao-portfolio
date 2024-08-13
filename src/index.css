@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-[50%] sm:text-[55%] md:text-[62.5%];
+  }
+
+  body {
+    @apply bg-Black1 font-Poppins text-[1.6rem] font-normal leading-[1.3] text-White1;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-[114rem] px-[2rem] sm:px-[8rem] md:px-[15rem] lg:px-0;
+  }
+}
