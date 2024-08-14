@@ -1,11 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { DesignThoughtsData } from "../../constants";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const DesignThoughts = () => {
   const designRef = useRef(null);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     gsap.fromTo(
@@ -22,6 +22,12 @@ const DesignThoughts = () => {
         },
       },
     );
+
+    // Fetch blog posts from WordPress REST API
+    fetch("http://localhost/wordpress/wp-json/wp/v2/posts")
+      .then((response) => response.json())
+      .then((data) => setPosts(data))
+      .catch((error) => console.error("Error fetching posts:", error));
   }, []);
 
   return (
@@ -33,26 +39,27 @@ const DesignThoughts = () => {
       </div>
 
       <div className="mt-[2rem] flex flex-col">
-        {DesignThoughtsData.map((item) => (
-          <div key={item.id}>
+        {posts.map((post) => (
+          <div key={post.id}>
             <NavLink
-              to={item.link}
               className="group relative flex flex-col rounded-[1.6rem] px-[1.6rem] py-[3rem] transition-all duration-[0.3s] hover:bg-[#1C1A19]"
+              to={`/posts/${post.id}`} // Adjust based on your routing
             >
               <div className="max-w-[48rem]">
                 <h4 className="text-[2.6rem] font-semibold leading-[3.12rem]">
-                  {item.title}
+                  {post.title.rendered}
                 </h4>
 
                 <p className="mb-[2rem] mt-[1.4rem] leading-[2.24rem] text-[#998F8F]">
-                  {item.content}
+                  {post.excerpt.rendered.replace(/<[^>]+>/g, "")}{" "}
+                  {/* Remove HTML tags */}
                 </p>
               </div>
 
               <div className="flex items-center justify-between text-[1.6rem] text-[#998F8F]">
-                <span>{item.date}</span>
-
-                <span>{item.time}</span>
+                <span>{new Date(post.date).toLocaleDateString()}</span>
+                <span>{new Date(post.date).toLocaleTimeString()}</span>{" "}
+                {/* Adjust based on time format */}
               </div>
 
               <svg

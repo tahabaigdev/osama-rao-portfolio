@@ -50,7 +50,11 @@ const App = () => {
 
               <Route path="/Thoughts" element={<Thoughts />} />
 
+              {/* Route for listing all blog posts */}
               <Route path="/BlogPosts" element={<BlogPosts />} />
+
+              {/* Dynamic route for individual blog post */}
+              <Route path="/posts/:postId" element={<BlogPosts />} />
             </Routes>
           </div>
         </div>
