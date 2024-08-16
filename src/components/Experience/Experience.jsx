@@ -37,6 +37,43 @@ const Experience = () => {
           <div className="flex flex-col justify-between gap-[4rem] sm:flex-row">
             <div>
               <h4 className="text-[2.6rem] font-semibold capitalize leading-[3.12rem]">
+                Aghosh UK
+              </h4>
+
+              <h5 className="mt-[.5rem] text-[1.8rem] font-medium capitalize leading-[2.5rem]">
+                Senior Graphic Designer and Social Media Manager
+              </h5>
+
+              <ul className="flex list-disc flex-col gap-[2rem] pl-[1.6rem]">
+                {[
+                  "Design high-quality visual content for a variety of platforms, including social media, websites, email campaigns, print materials, and more.",
+                  "Redesign web interfaces to enhance user-friendliness.",
+                  "Develop and implement comprehensive social media strategies across multiple platforms to increase brand visibility, engagement, and follower growth.",
+                  "Maintain consistent visual branding across all platforms, ensuring that all digital content aligns with the overall brand guidelines and voice.",
+                  "Track, analyze, and report on the performance of social media campaigns, using insights to optimize.",
+                  "future content and strategies for maximum impact.",
+                ].map((item, i) => (
+                  <li
+                    key={i}
+                    className="mt-[1.4rem] max-w-[42rem] leading-[2.24rem] text-White3"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="text-center text-White3">
+              Manchester, UK <br />
+              Mar2024 –Aug2024
+            </div>
+          </div>
+        </div>
+
+        <div className="rounded-[1.6rem] px-[1.6rem] py-[2.4rem] transition-all duration-[0.3s] hover:bg-[#1C1A19]">
+          <div className="flex flex-col justify-between gap-[4rem] sm:flex-row">
+            <div>
+              <h4 className="text-[2.6rem] font-semibold capitalize leading-[3.12rem]">
                 Eagle Production
               </h4>
 

@@ -113,11 +113,9 @@ const Hero = () => {
                     display: "inline-block",
                     fill: "rgb(255, 255, 255)",
                     flexShrink: 0,
-                    width: "2rem",
-                    height: "2rem",
                   }}
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                 >
                   <path
                     d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
@@ -165,16 +163,12 @@ const Hero = () => {
                   color="rgb(255, 255, 255)"
                   style={{
                     userSelect: "none",
-                    width: "100%",
-                    height: "100%",
                     display: "inline-block",
                     fill: "rgb(255, 255, 255)",
                     flexShrink: 0,
-                    width: "2rem",
-                    height: "2rem",
                   }}
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                 >
                   <path
                     d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
