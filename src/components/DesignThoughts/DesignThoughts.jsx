@@ -24,7 +24,7 @@ const DesignThoughts = () => {
     );
 
     // Fetch blog posts from WordPress REST API
-    fetch("http://localhost/wordpress/wp-json/wp/v2/posts")
+    fetch("https://osamarao.com/wp-json/wp/v2/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data))
       .catch((error) => console.error("Error fetching posts:", error));

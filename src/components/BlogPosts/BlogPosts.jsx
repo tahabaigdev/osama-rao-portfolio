@@ -11,7 +11,7 @@ const BlogPosts = () => {
     const fetchPost = async () => {
       try {
         const response = await fetch(
-          `http://localhost/wordpress/wp-json/wp/v2/posts/${postId}?_embed`, // Fetch post with embedded data
+          `https://osamarao.com/wp-json/wp/v2/posts/${postId}?_embed`, // Fetch post with embedded data
         );
         const data = await response.json();
         setPost(data);
