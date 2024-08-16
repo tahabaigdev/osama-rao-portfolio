@@ -58,31 +58,6 @@ const Navlink = ({ to, icon, title, content, date }) => {
 
         <div className="leading-[1.76rem] text-White3">{date}</div>
       </div>
-
-      <svg
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        xmlns="http://www.w3.org/2000/svg"
-        focusable="false"
-        viewBox="0 0 24 24"
-        color="rgb(255, 255, 255)"
-        style={{
-          userSelect: "none",
-          display: "inline-block",
-          fill: "rgb(255, 255, 255)",
-          flexShrink: 0,
-          width: "2rem",
-          height: "2rem",
-          rotate: "-45deg",
-        }}
-        width="24"
-        height="24"
-        className="absolute right-[1.6rem] top-[3.6rem] transition-all duration-[0.3s] group-hover:right-[.4rem] group-hover:top-[2.4rem]"
-      >
-        <path
-          d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
-          fill="#F46C38"
-        ></path>
-      </svg>
     </NavLink>
   );
 };

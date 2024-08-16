@@ -1,10 +1,10 @@
-import DesignThoughts from "./components/DesignThoughts/DesignThoughts";
+import Blogs from "./components/Blogs/Blogs";
 import WorkTogether from "./components/WorkTogether/WorkTogether";
 
 const Thoughts = () => {
   return (
     <>
-      <DesignThoughts />
+      <Blogs />
 
       <div className="pt-[12rem]">
         <WorkTogether />

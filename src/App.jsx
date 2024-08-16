@@ -6,7 +6,7 @@ import Home from "./Home";
 import ExperienceP from "./ExperienceP";
 import Projects from "./Projects";
 import Tools from "./Tools";
-import Thoughts from "./Thoughts";
+import Blog from "./Blog";
 import Sidebar from "./components/Sidebar/Sidebar";
 import BlogPosts from "./components/BlogPosts/BlogPosts";
 import gsap from "gsap";
@@ -48,7 +48,7 @@ const App = () => {
 
               <Route path="/Tools" element={<Tools />} />
 
-              <Route path="/Thoughts" element={<Thoughts />} />
+              <Route path="/Blog" element={<Blog />} />
 
               {/* Route for listing all blog posts */}
               <Route path="/BlogPosts" element={<BlogPosts />} />

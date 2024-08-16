@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import MainImg from "../../assets/images/main-img.avif";
+import MainImg from "../../assets/images/osama-rao.jpg";
 import LinkedinIcon from "../../assets/images/icons/linkedin.svg";
 import BehanceIcon from "../../assets/images/icons/behance.svg";
 import MailIcon from "../../assets/images/icons/mail.svg";
@@ -37,8 +37,8 @@ const Sidebar = () => {
         </div>
 
         <div className="mt-[2rem] flex flex-col gap-[3rem] lg:mt-[10rem]">
-          <p className="max-w-[30rem] text-[1.8rem] font-medium leading-[1.98rem] text-White4">
-            Seasoned Graphic Designer with five years of hands-on experience
+          <p className="max-w-[30rem] text-[1.8rem] font-medium text-White4">
+            Phone: +44 7940508493 <br /> Location: Manchester, United Kingdom
           </p>
 
           <ul className="flex items-center justify-center gap-[1.6rem]">

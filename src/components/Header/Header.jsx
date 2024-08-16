@@ -15,7 +15,7 @@ const Header = () => {
             { icon: ExperienceIcon, link: "/ExperienceP", tag: "Experience" },
             { icon: ProjectsIcon, link: "/Projects", tag: "Projects" },
             { icon: ToolsIcon, link: "/Tools", tag: "Tools" },
-            { icon: ThoughtsIcon, link: "/Thoughts", tag: "Thoughts" },
+            { icon: ThoughtsIcon, link: "/Blog", tag: "Blog" },
           ].map((item, i) => (
             <li key={i}>
               <NavLink

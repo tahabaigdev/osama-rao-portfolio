@@ -8,22 +8,27 @@ const Hero = () => {
     <section>
       <div>
         <div className="flex items-center justify-center text-center lg:justify-between lg:text-left">
-          <h1 className="text-[7rem] font-bold leading-[7rem] md:text-[11rem] md:leading-[11rem]">
-            GRAPHIC <span className="block text-Black4">DESIGNER</span>
+          <h1 className="text-[7rem] font-bold uppercase leading-[7rem] md:text-[11rem] md:leading-[11rem]">
+            Brand <span className="block text-Black4">Developer</span>
           </h1>
 
           <img src={Aestrik} alt="vector" className="hidden lg:block" />
         </div>
 
-        <p className="mx-auto mt-[1rem] max-w-[55rem] text-center text-[1.8rem] leading-[2.52rem] text-White3 lg:mx-0 lg:text-left">
-          Seasoned Graphic Designer with five years of hands-on experience
-          crafting visually stunning and user-friendly digital experiences.
+        <p className="mx-auto mt-[1rem] max-w-[60rem] text-center text-[1.8rem] leading-[2.52rem] text-White3 lg:mx-0 lg:text-left">
+          I’m Osama Saleem, currently doing my master in business management
+          from Manchester Metropolitan University. Seasoned Graphic Designer
+          with five years of hands-on experience crafting visually stunning and
+          user-friendly digital experiences. Proficient in designing responsive
+          websites and mobile applications, adept at incorporating cutting-edge
+          design trends, and dedicated to delivering high-quality solutions that
+          exceed client expectations.
         </p>
 
         <div className="my-[6rem] flex justify-center gap-[2rem] text-center sm:gap-[4rem] lg:justify-start lg:text-left">
           <div className="flex flex-col">
             <h4 className="text-[7rem] font-semibold leading-[8.4rem] tracking-[-0.7px]">
-              +5
+              +6
             </h4>
 
             <span className="tracking-[-0.16px] text-White3">
@@ -33,7 +38,7 @@ const Hero = () => {
 
           <div className="flex flex-col">
             <h4 className="text-[7rem] font-semibold leading-[8.4rem] tracking-[-0.7px]">
-              +46
+              +150
             </h4>
 
             <span className="tracking-[-0.16px] text-White3">
@@ -43,7 +48,7 @@ const Hero = () => {
 
           <div className="flex flex-col">
             <h4 className="text-[7rem] font-semibold leading-[8.4rem] tracking-[-0.7px]">
-              +20
+              +30
             </h4>
 
             <span className="tracking-[-0.16px] text-White3">
@@ -52,7 +57,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-[3rem] md:flex-row md:items-start lg:justify-start">
+        <div className="flex flex-col items-center justify-center gap-[3rem] md:flex-row md:items-stretch lg:justify-start">
           <div className="relative z-[1] w-[36.6rem] overflow-hidden rounded-[1rem] bg-PrimaryColor px-[2rem] pb-[2.2rem] pt-[4rem] md:w-[30rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,8 +93,8 @@ const Hero = () => {
 
             <img src={Layer} alt="icon" className="w-[3.8rem]" />
 
-            <h4 className="my-[3rem] text-[2.4rem] font-medium leading-[110%]">
-              DYNAMIC ANIMATION, MOTION DESIGN
+            <h4 className="my-[3rem] text-[2.4rem] font-medium uppercase leading-[110%]">
+              Pitch Tech <br /> Design
             </h4>
 
             <div className="text-end">
@@ -143,8 +148,8 @@ const Hero = () => {
 
             <img src={Layout} alt="icon" className="w-[3.8rem]" />
 
-            <h4 className="my-[3rem] text-[2.4rem] font-medium leading-[110%] text-Black1">
-              FRAMER, FIGMA, WORDPRESS, REACTJS
+            <h4 className="my-[3rem] text-[2.4rem] font-medium uppercase leading-[110%] text-Black1">
+              Shopify, Wordpress, Custom Portfolio
             </h4>
 
             <div className="text-end">

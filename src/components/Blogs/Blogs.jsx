@@ -34,7 +34,7 @@ const DesignThoughts = () => {
     <section ref={designRef}>
       <div>
         <h2 className="text-center text-[6rem] font-bold leading-[6rem] md:text-[9rem] md:leading-[9rem] lg:text-left">
-          DESIGN <span className="block text-Black4">THOUGHTS</span>
+          BLOG
         </h2>
       </div>
 
